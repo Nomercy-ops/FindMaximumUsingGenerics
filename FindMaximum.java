@@ -36,7 +36,7 @@ public class FindMaximum {
      */
       
     public void printMaxInteger(Integer max){
-        System.out.println("Maximum Integer Number is " + max);
+        System.out.println("Maximum Integer Number is  : " + max);
     }
     
  /**
@@ -48,7 +48,7 @@ public class FindMaximum {
   * 
   */
     
-     public void findMaximumDouble(Double number1, Double number2, Double number3) {
+    public void findMaximumDouble(Double number1, Double number2, Double number3) {
          Double max = number1;
        if(number2.compareTo(max)> 0){
            max = number2;
@@ -64,8 +64,37 @@ public class FindMaximum {
      * @param max 
      */
      
-     private void printMaxDouble(Double max) {
-     System.out.println("Maximum Double Number is " + max);
+    private void printMaxDouble(Double max) {
+     System.out.println("Maximum Double Number is : " + max);
+    }
+     
+ /**
+  * UC-2   findMaximum method returns maximum String.
+  * and comparing it with compareTo method to find max.
+  * 
+     * @param fruitA
+     * @param fruitB
+     * @param fruitC
+  */
+     
+    public void findMaximumString(String fruitA, String fruitB, String fruitC) {
+         String max = fruitA;
+       if(fruitB.compareTo(max)> 0){
+           max = fruitB;
+       }
+       if(fruitC.compareTo(max)>0){
+           max = fruitC;
+       }
+        printString(max);
+    }
+    
+    
+    /**
+     *  method for printing max String. 
+     * @param max 
+     */
+    private void printString(String max) {
+      System.out.println("Maximum String Fruit is :  " + max); 
     }
 
     /**
@@ -81,7 +110,8 @@ public class FindMaximum {
         findmaximum.findMaxInteger(number1, number2, number3);
         Double num1 = 3.5,num2 = 10.3, num3 = 4.5;
         findmaximum.findMaximumDouble(num1, num2, num3);
-       
+        String fruits1 = "Apple", fruits2 = "Peach", fruits3 = "Banana";
+        findmaximum.findMaximumString(fruits1, fruits2, fruits3);
     }
 
 }
