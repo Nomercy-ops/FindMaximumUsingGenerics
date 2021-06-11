@@ -33,9 +33,14 @@ public class FindMaximum {
         printMax(max);
 
     }
+	
+  /**
+	* Method for printing all the methods values
+	* @param max
+	*/
 
     private <E> void printMax(E max) {
-        System.out.println("Maximum String Fruit is :  " + max);
+        System.out.println("Maximum  is :  " + max);
     }
 
     /**
